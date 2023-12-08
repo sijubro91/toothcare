@@ -1,0 +1,307 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+
+.head-container{
+    padding: 10px;
+    .logocol{
+        img{
+            max-width: 230px;
+        }
+        .navbar-toggler{
+            float: right;
+            padding-top: 12px;
+        }
+    }
+    .navcol{
+        ul{
+            float: right;
+             @media screen and (max-width: 767px) {
+                width: 100%;
+                margin-top: 10px;
+             }
+            li{
+                float: left;
+                padding: 15px;
+                font-weight: 600;
+                @media screen and (max-width: 767px) {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.slider{
+    .slid-row{
+        .left-col{
+            h6{
+                text-align: left;
+                font-size: 1.1rem;
+                font-weight: 00;
+                color: $color-primary;
+                color: #c20000;
+                text-transform: uppercase;
+
+            }
+            h1{
+                text-align: left;
+                font-size: 4.2rem;
+                font-weight: 700;
+                @media screen and (max-width: 940px) {
+                    font-size: 2.5rem;
+                }
+            }
+             text-align: right;
+            padding: 110px;
+            @media screen and (max-width: 940px) {
+                padding: 60px;
+            }
+        }
+        .right-col{
+            
+        }
+    }
+}
+
+
+.services {
+  background-color: #f7f7f7;
+  @include big-padding();
+  .servic-row {
+    .servcover {
+        border-bottom: 5px solid #ff405c;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      img {
+        margin-bottom: 20px;
+        max-width: 60px;
+      }
+      h4 {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .span {
+      background-color: #17adb6;
+      color: #fff;
+      padding: 5px 25px;
+      font-weight: 600;
+      border-radius: 15px;
+      @include shado-1();
+      margin: auto;
+      margin-top: -17px;
+      margin-left: -20px;
+      width: 120px;
+    }
+    .servic-col {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .mor-cover {
+      position: absolute;
+      margin-top: -15px;
+    }
+  }
+}
+
+
+
+.testimonial-container{
+	background-color: #FFF;
+}
+.testimonial{
+	text-align: center;
+	padding: 15px;
+	.pic{
+		img{
+			max-width: 90px;
+			border-radius: 50%;
+			background-color: #FFF;
+			padding: 2px;
+			@include shado-1();
+			margin-bottom: 10px;
+		}
+	}
+	.description{
+
+	}
+	.title{
+		font-size: 1.5rem;
+		margin-top: 3px;
+		margin-top: 10px;
+	}
+	.post{
+
+	}
+}
+
+.about-container{
+    .aboutlefft{
+        padding: 30px;
+        h2{
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                padding: 10px;
+                font-size: 1.2rem;
+                i{
+                    font-size: 1rem;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .imgright{
+        
+    }
+}
+
+
+/* ===================================== Blog CSS ================================== */
+
+.blog{
+    @include big-padding();
+    background-color: #fff;
+    .blog-row{
+        margin-top: 20px;
+        .blogcol{
+            margin-bottom: 30px;
+            img{
+                margin-bottom: 10px;
+            }
+            span{
+                font-size: .8rem;
+            }
+            h4{
+                margin-top: 10px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ===================================== Fooer CSS ================================== */
+
+.footer {
+  padding: 50px;
+  background-color: #24313d;
+  color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .footer {
+      padding: 50px 10px; } }
+  .footer h2 {
+    font-size: 22px;
+      margin-top: 20px;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: 600;
+}
+  .footer p {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: .9rem; }
+  .footer .link-list li {
+    padding: 7px;
+    font-weight: 500;
+    font-size: .95rem;
+    border-bottom: 1px solid #7586985c; }
+    .footer .link-list li a {
+      color: #FFF; }
+    .footer .link-list li i {
+      float: right; }
+  .footer .map-img {
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px; }
+address{
+    font-size: .95rem;
+    a{
+        color: #fff;
+    }
+}
+.copy {
+  padding: 20px;
+  background-color: #283746;
+  font-size: .85rem;
+  color: #FFF; 
+}
+  .copy a {
+    color: #FFF; 
+}
+  .copy span {
+    float: right; 
+}
+    .copy span i {
+        
+      margin-right: 20px; 
+}
+@media screen and (max-width: 777px) {
+      .copy span {
+        display: none; } 
+}
+
+
+
+
+.our-team{
+    @include big-padding();
+    .team-row{
+        .single-usr{
+            background-color: #FFF;
+            @include shado-3();
+            border-radius: 5px;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+            img{
+
+            }
+            .det-o{
+                text-align: center;
+                padding: 10px;
+                h4{
+                    font-size: 1.1rem;
+                    margin-bottom: 2px;
+                    font-weight: 600;
+                }
+                i{
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}
+
